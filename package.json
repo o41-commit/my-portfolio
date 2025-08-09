@@ -1,0 +1,12 @@
+{
+  "name": "my-portfolio-mit",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "license": "MIT",
+  "author": "DevNado",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
