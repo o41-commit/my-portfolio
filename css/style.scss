@@ -94,6 +94,10 @@ main {
     grid-area: bio;
     font-size: 1.5rem;
   }
+
+  .bio p {
+    text-align: justify;
+  }
   .job-1 {
     grid-area: job1;
   }
@@ -158,6 +162,7 @@ main {
   .Email {
     width: 30%;
   }
+
 }
 
 // BUTTONS STYLES

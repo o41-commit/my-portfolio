@@ -216,6 +216,9 @@ main#home h1 {
   grid-area: bio;
   font-size: 1.5rem;
 }
+.about-info .bio p {
+  text-align: justify;
+}
 .about-info .job-1 {
   grid-area: job1;
 }
@@ -375,7 +378,8 @@ main#home h1 {
     font-style: bold;
   }
   .contact .lg-heading {
-    padding: 8px;
+    margin-left: -20px;
+    padding: 8px 0px;
   }
 }
 @media screen and (max-width: 500px) {
