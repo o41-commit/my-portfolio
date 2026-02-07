@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,6 +9,10 @@
       integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>Contact Me</title>
@@ -50,14 +54,16 @@
 
       <div class="boxes emael">
         <a href="mailto:oluwatobilobafatoba@gmail.com">
-        <div class="email">
-          <span class="text-secondary">Email: </span
-          >oluwatobilobafatoba@gmail.com
-        </div>
-      </a>
+          <div class="email">
+            <span class="text-secondary">Email: </span
+            >oluwatobilobafatoba@gmail.com
+          </div>
+        </a>
 
         <a href="tel:+2349068994360">
-          <div><span class="text-secondary">Phone: </span>(+234) 9068994360</div>
+          <div>
+            <span class="text-secondary">Phone: </span>(+234) 9068994360
+          </div>
         </a>
         <div>
           <span class="text-secondary">Address: </span>Lagos state Nigeria
@@ -65,7 +71,58 @@
       </div>
     </main>
 
-    <footer id="main-footer">Copyright &copy; 2025</footer>
+    <main class="testimonials">
+      <div>
+        <h1 class="lg-heading">Testimonials</h1>
+      </div>
+
+      <div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper" id="data">
+            <!-- Slides -->
+            </div>
+          <div class="swiper-pagination"></div>
+
+          </div>
+        </div>
+      </div>
+
+      <section class="form" id= "form">
+        <div class="form-header">
+          <h1>Share Your Experience Working With Me</h1>
+
+          <p>
+            Your feedback helps me improve and provides insight for future
+            clients. All submissions are reviewed before being published.
+          </p>
+        </div>
+        <form id="testimonial-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Pls input your name" required />
+          </div>
+          <div class="form-group">
+            <label for="role">Role:</label>
+            <input type="text" id="role" name="role" placeholder="Pls add a role" required />
+          </div>
+          <div class="form-group">
+            <label for="testimonial">Your Testimonial:</label>
+            <textarea id="testimonial" name="comment" placeholder="Type a testimonial" required></textarea>
+          </div>
+          <button type="submit" id="submit">Submit Testimonial</button>
+        </form>
+      </section>
+      <section class="mess">
+        <div class="mess-data">
+          <h4 class="respond" id="respond"></h4>
+        </div>
+      </section>
+    </main>
+
+    <footer id="main-footer">DevNado Copyright &copy; 2026</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

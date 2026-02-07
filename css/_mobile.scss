@@ -98,4 +98,182 @@
   .Email {
     font-size: 20px;
   }
+
+  .testimonials {
+    padding: 2rem 1rem !important;
+
+    .lg-heading {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .swiper {
+      margin-bottom: 2rem;
+      width: 100%;
+      padding: 0 10px;
+
+      .swiper-wrapper {
+        gap: 10px;
+
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .card {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+            min-height: auto;
+            padding-bottom: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition:
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+
+            &:hover {
+              transform: translateY(-5px);
+              box-shadow: 0 8px 20px rgba(238, 206, 26, 0.3);
+            }
+
+            .head {
+              padding: 15px 12px;
+
+              .name {
+                font-size: 0.95rem;
+                margin: 0 0 8px 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                .name-output {
+                  display: inline;
+                  font-size: 1rem;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+              }
+
+              .role {
+                font-size: 0.85rem;
+                margin: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                .role-output {
+                  display: inline;
+                  font-size: 0.95rem;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+              }
+            }
+
+            p {
+              padding: 0 12px 12px;
+              font-size: 0.9rem;
+              line-height: 1.5;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;
+            }
+          }
+        }
+      }
+
+      .swiper-pagination {
+        margin-top: 20px;
+
+        .swiper-pagination-bullet {
+          width: 12px;
+          height: 12px;
+          background: rgba(238, 206, 26, 0.4);
+          border: 2px solid #eece1a;
+        }
+
+        .swiper-pagination-bullet-active {
+          background: #eece1a;
+          transform: scale(1.4);
+          box-shadow: 0 0 12px rgba(238, 206, 26, 0.5);
+        }
+      }
+    }
+
+    .form {
+      padding: 1.5rem 1rem;
+      margin-top: 2rem;
+
+      .form-header {
+        margin-bottom: 1.5rem;
+
+        h1 {
+          font-size: 1.3rem;
+          margin-bottom: 0.5rem;
+          text-align: center;
+        }
+
+        p {
+          font-size: 0.95rem;
+          text-align: center;
+        }
+      }
+
+      #testimonial-form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0 1rem;
+
+        .form-group {
+          width: 100%;
+          margin-bottom: 18px;
+
+          label {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 6px;
+          }
+
+          textarea,
+          input {
+            font-size: 15px;
+            padding-bottom: 8px;
+            width: 100%;
+          }
+        }
+
+        button {
+          padding: 12px 20px;
+          font-size: 14px;
+          width: 100%;
+          max-width: 280px;
+          margin: 10px auto 0;
+        }
+      }
+    }
+
+    .mess {
+      top: 15px;
+      left: 50%;
+      width: 90%;
+      transform: translateX(-50%);
+
+      .mess-data {
+        min-width: auto;
+        max-width: 100%;
+        padding: 12px 15px;
+
+        h4 {
+          font-size: 13px;
+        }
+      }
+    }
+  }
 }
